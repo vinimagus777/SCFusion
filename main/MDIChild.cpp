@@ -1334,7 +1334,7 @@ bool MyChild::WriteToFile(wxString fileName)
 					for(size_t j=0; j < prop->GetChildCount(); j++)
 					{
 						wxPGProperty *propChild = prop->Item(j);
-						if(!((wxString)propChild->GetValue()).IsEmpty())
+						if(!(propChild->GetValue().GetString()).IsEmpty())
 						{
 							wxString nodeName = propChild->GetName().Mid(propChild->GetName().Find('.') + 1);
 							nodeName.Replace(" ", "");
@@ -1345,7 +1345,7 @@ bool MyChild::WriteToFile(wxString fileName)
 							}
 
 							wxXmlNode *valueNode = new wxXmlNode(wxXML_ELEMENT_NODE, nodeName);
-							valueNode->AddChild(new wxXmlNode(wxXML_TEXT_NODE, wxEmptyString, (wxString)propChild->GetValue()));
+							valueNode->AddChild(new wxXmlNode(wxXML_TEXT_NODE, wxEmptyString, propChild->GetValue().GetString()));
 							targetNode->AddChild(valueNode);
 						}
 					}
