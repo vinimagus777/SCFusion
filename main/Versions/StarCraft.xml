@@ -3,7 +3,7 @@
 	<XMLFileVersion>1.1</XMLFileVersion>
 	<GameShortDescription>StarCraft</GameShortDescription>
 	<GameLongDescription>Starcraft II: Legacy of the Void</GameLongDescription>
-	<MinVersion>5.0.13</MinVersion>
+	<MinVersion>5.0.14</MinVersion>
 	<Races>
 		<Race>
 			<Name>Protoss</Name>
@@ -160,14 +160,14 @@
 				</Unit>
 				<Unit>
 					<Name>Tempest</Name>
-					<SupplyCost>5</SupplyCost>
+					<SupplyCost>4</SupplyCost>
 					<StartingEnergy>50</StartingEnergy>
 					<MaxEnergy>200</MaxEnergy>
 					<EnergyRechargeRate>0.7875</EnergyRechargeRate>
 				</Unit>
 				<Unit>
 					<Name>Mothership</Name>
-					<SupplyCost>6</SupplyCost>
+					<SupplyCost>8</SupplyCost>
 					<IsUnique>True</IsUnique>
 					<StartingEnergy>50</StartingEnergy>
 					<MaxEnergy>200</MaxEnergy>
@@ -566,8 +566,8 @@
 					<BuildingRequirement>Cybernetics Core</BuildingRequirement>
 					<SourceBuilding>Gateway</SourceBuilding>
 					<RequiresSourceBuildingStatusAbsent>Busy</RequiresSourceBuildingStatusAbsent>
-					<AppliesSourceBuildingStatus duration="30">Busy</AppliesSourceBuildingStatus>
-					<UnitComplete time="30" occupiesSourceBuilding="True">Stalker</UnitComplete>
+					<AppliesSourceBuildingStatus duration="27">Busy</AppliesSourceBuildingStatus>
+					<UnitComplete time="27" occupiesSourceBuilding="True">Stalker</UnitComplete>
 					<MineralCost>125</MineralCost>
 					<GasCost>50</GasCost>
 				</Command>
@@ -717,7 +717,7 @@
 					<RequiresSourceBuildingStatusAbsent>Busy</RequiresSourceBuildingStatusAbsent>
 					<AppliesSourceBuildingStatus duration="39">Busy</AppliesSourceBuildingStatus>
 					<UnitComplete time="39" occupiesSourceBuilding="True">Immortal</UnitComplete>
-					<MineralCost>275</MineralCost>
+					<MineralCost>250</MineralCost>
 					<GasCost>100</GasCost>
 				</Command>
 				<Command category="BuildUnit">
@@ -808,8 +808,8 @@
 					<RequiresSourceBuildingStatusAbsent>Busy</RequiresSourceBuildingStatusAbsent>
 					<AppliesSourceBuildingStatus duration="79">Busy</AppliesSourceBuildingStatus>
 					<UnitComplete time="79" occupiesSourceBuilding="True">Mothership</UnitComplete>
-					<MineralCost>300</MineralCost>
-					<GasCost>300</GasCost>
+					<MineralCost>400</MineralCost>
+					<GasCost>400</GasCost>
 				</Command>
 
 				<!-- Unit Abilities -->
@@ -1621,7 +1621,7 @@
 				</Unit>
 				<Unit>
 					<Name>Ghost</Name>
-					<SupplyCost>2</SupplyCost>
+					<SupplyCost>3</SupplyCost>
 					<StartingEnergy>50</StartingEnergy>
 					<MaxEnergy>200</MaxEnergy>
 					<EnergyRechargeRate>0.7875</EnergyRechargeRate>
@@ -1910,8 +1910,8 @@
 					<BuildingComplete time="18">Sensor Tower</BuildingComplete>
 					<OccupyWorker time="18.0">True</OccupyWorker>
 					<WorkerTravelTime>10.0</WorkerTravelTime>
-					<MineralCost>125</MineralCost>
-					<GasCost>100</GasCost>
+					<MineralCost>100</MineralCost>
+					<GasCost>50</GasCost>
 				</Command>
 				<Command category="BuildBuilding">
 					<Name>Build Ghost Academy</Name>
@@ -3758,6 +3758,9 @@
 					<Name>Adrenal Glands</Name>
 				</Research>
 				<Research>
+					<Name>Nanomuscular Swell</Name>
+				</Research>
+				<Research>
 					<Name>Metabolic Boost</Name>
 				</Research>
 				<Research>
@@ -3883,7 +3886,7 @@
 					<WorkerTravelTime>15.0</WorkerTravelTime>
 					<SpawnBase time="71">True</SpawnBase>
 					<BuildingComplete time="71">Hatchery</BuildingComplete>
-					<MineralCost>300</MineralCost>
+					<MineralCost>275</MineralCost>
 				</Command>
 				<Command category="BuildBuilding">
 					<Name>Build Macro Hatchery</Name>
@@ -4086,7 +4089,7 @@
 					<RequiresSourceBuildingStatusAbsent>Busy</RequiresSourceBuildingStatusAbsent>
 					<AppliesSourceBuildingStatus duration="36">Busy</AppliesSourceBuildingStatus>
 					<UnitComplete time="36">Queen</UnitComplete>
-					<MineralCost>150</MineralCost>
+					<MineralCost>175</MineralCost>
 				</Command>
 				<Command category="BuildUnit">
 					<Name>Build Queen From Lair</Name>
@@ -4323,6 +4326,17 @@
 					<RequiresSourceBuildingStatusAbsent>Busy</RequiresSourceBuildingStatusAbsent>
 					<AppliesSourceBuildingStatus duration="43">Busy</AppliesSourceBuildingStatus>
 					<ResearchComplete time="43" occupiesSourceBuilding="True">Pneumatized Carapace</ResearchComplete>
+					<MineralCost>100</MineralCost>
+					<GasCost>100</GasCost>
+				</Command>
+				<Command category="Research">
+					<Name>Research Nanomuscular Swell At Hydralisk Den</Name>
+					<BuildingRequirement>Hydralisk Den</BuildingRequirement>
+					<BuildingRequirement>Hive</BuildingRequirement>
+					<SourceBuilding>Hydralisk Den</SourceBuilding>
+					<RequiresSourceBuildingStatusAbsent>Busy</RequiresSourceBuildingStatusAbsent>
+					<AppliesSourceBuildingStatus duration="64">Busy</AppliesSourceBuildingStatus>
+					<ResearchComplete time="64" occupiesSourceBuilding="True">Nanomuscular Swell</ResearchComplete>
 					<MineralCost>100</MineralCost>
 					<GasCost>100</GasCost>
 				</Command>
@@ -4934,6 +4948,10 @@
 				<Target category="Research">
 					<Name>Adrenal Glands</Name>
 					<Research>Adrenal Glands</Research>
+				</Target>
+				<Target category="Research">
+					<Name>Nanomuscular Swell</Name>
+					<Research>Nanomuscular Swell</Research>
 				</Target>
 				<Target category="Research">
 					<Name>Metabolic Boost</Name>
