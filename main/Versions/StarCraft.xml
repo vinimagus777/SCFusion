@@ -169,6 +169,9 @@
           <Name>Mothership</Name>
           <SupplyCost>8</SupplyCost>
           <IsUnique>True</IsUnique>
+          					<StartingEnergy>50</StartingEnergy>
+					<MaxEnergy>200</MaxEnergy>
+					<EnergyRechargeRate>0.7875</EnergyRechargeRate>
         </Unit>
       </Units>
       <Research>
@@ -4987,4 +4990,4 @@
       </Targets>
     </Race>
   </Races>
-</Data>
+</Data> 
